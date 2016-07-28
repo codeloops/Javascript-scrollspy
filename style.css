@@ -1,0 +1,137 @@
+body, html {
+  height: 100%;
+  width: 100%;
+}
+
+#page1 {
+  background: #9822b5;
+  margin: 0px !important;
+  height: 100%;
+  width: 100%;
+}
+
+#page2 {
+  background: #ff0000;
+  margin: 0px !important;
+  height: 100%;
+  width: 100%;
+}
+
+#page3 {
+  background: #EE0EE0;
+  margin: 0px !important;
+  height: 100%;
+  width: 100%;
+}
+
+#page4 {
+  background: #ff0000;
+  margin: 0px !important;
+  height: 100%;
+  width: 100%;
+}
+
+
+#back-menu {
+  height: 100%;
+  width: 10px;
+  background-color: #585858;
+  position: absolute;
+}
+
+#left-menu {
+  width: 100px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  /*background: linear-gradient(to right, rgba(255, 255, 255, 0.3) 80%, rgba(255, 255, 255, 0));*/
+  position: absolute;
+  list-style: none;
+  z-index: 1;
+
+}
+
+#left-menu ul {
+  margin-top: 30px;
+  margin-left: -40px;
+  width: 10%;
+  font-weight: 600;
+}
+
+#my-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.menu-item {
+  position: relative;
+  width: 10px;
+  height: 70px;
+  background-color: #585858;
+  list-style: none;
+}
+
+.item-active {
+  background-color: #f37121;
+  transition: background-color 1s ease-in-out;
+  -webkit-animation: menuAnimate 2s; /* Chrome, Safari, Opera */
+  animation: menuAnimate 2s;
+}
+
+.active,
+.not-active {
+  list-style: none;
+  position: absolute;
+  padding-left: 15px;
+  margin-top: -45px;
+}
+
+.active {
+  color: #f37121;
+}
+
+.not-active {
+  color: #7b7b7b;
+}
+
+.menu-item li {
+  margin-left: 15px;
+  padding-top: 50px;
+  list-style: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+a:hover .menu-item li {
+  color: #e3761c;
+  text-decoration: none !important;
+}
+
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes menuAnimate {
+    from {
+          border-top: 30px solid #585858;
+          border-bottom: 30px solid #585858;
+         }
+    to {
+        border-top: 0px solid #585858;
+        border-bottom: 2px solid #585858;
+       }
+}
+
+/* Standard syntax */
+@keyframes menuAnimate {
+  from {
+    border-top: 30px solid #585858;
+    border-bottom: 30px solid #585858;
+       }
+  to {
+    border-top: 0px solid #585858;
+    border-bottom: 2px solid #585858;
+     }
+}
